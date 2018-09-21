@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- 让 html 元素成为 AngularJS 应用的根元素 -->
+<html ng-app='Vidzy' >
+
+<head>
+
+<!-- 添加bootstrap和angular框架 -->
+
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css' />
+
+<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+
+<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular-resource.min.js"></script>
+
+<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular-route.min.js"></script>
+
+<script src= "/javascripts/vidzy.js" > </script>
+
+</head>
+
+<body>
+<!--使用 ngView 指令， 该 div 内的 HTML 内容会根据路由的变化而变化 -->
+<div ng-view> </div>
+
+</body>
+
+</html>

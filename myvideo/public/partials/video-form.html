@@ -1,0 +1,15 @@
+<h1>Add a Video</h1>
+<form >
+  <div class ="form-group">
+     <label>Title</label>        
+     <!-- ng-model将会绑定输入框的值到 scope 变量中，此处的代码会使输入框的值与控制器文件中的$scope.videos数组中的一个video的title属性绑定 -->
+     <input class="form-control"  ng-model="video.title"   >
+  </div>
+
+  <div  class="form-group" >
+     <label>Description</label>
+     <textarea  class="form-control"  ng-model="video.description" >  </textarea>
+  </div>
+  <!-- ng-click指令，当点击这个按钮时会触发控制器中的save()方法 -->
+  <input type="button" class="btn btn-primary"  value="Save" ng-click="save()" >  
+</form>

@@ -1,0 +1,13 @@
+<h1>Home Page</h1>
+
+<p>
+    <!-- 加#是为了兼容旧浏览器 -->
+    <a href="/#/add-video">Add a Video</a>
+</p>
+
+
+<ul>
+    <!-- ng-repeat与循环遍历有点相似，此处的意思为依次呈现出videos数组中的所有video的title属性 -->
+      <li ng-repeat='video in videos'>{{video.title}}</li>
+</ul>
+
